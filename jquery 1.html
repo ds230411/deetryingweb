@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+
+
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+       
+        
+
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+<script  rel="stylesheet" src="bootstrap/js/bootstrap.min.js" ></script>
+        
+        
+       
+
+<style type="text/css">
+	#circle
+	{
+		height: 150px;
+		width:150px;
+		border-radius: 50%;
+		background-color: red;
+		margin:10px;
+	}
+	.square
+	{
+		height:150px;
+		width:150px;
+		background-color: blue;
+		margin:10px;
+
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="progressbar"></div>
+	<div id="circle" style="z-index: 1000000" ></div>
+<p class="me" style="">this is some text</p>
+
+<p " >Date: <input type="text" id="datepicker" placeholder="DD/MM/YYYY" style="border-radius:5px; padding: 5px;"></p>
+
+
+
+
+
+<script type="text/javascript">
+	
+	$("#circle").click(function({
+
+			$(this).fadeOut();
+	});
+    
+    $(".me").draggable();
+
+    $("#datepicker").datepicker();
+  
+  	$("#progressbar").progressbar({value: 99});
+
+  	
+</script>
+
+</body>
+
+</html>

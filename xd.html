@@ -1,0 +1,897 @@
+<?php
+
+            
+            $emailTo = "$_POST['email']";
+            
+            $subject = $_POST['subject'];
+            
+            $content = $_POST['content'];
+            
+            $headers = "From:ds23041@gmail.com";
+            
+            mail($emailTo, $subject, $content, $headers)
+                
+                
+          
+
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+    
+        
+     
+      
+    <meta charset="utf-8">
+      
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   <style type="text/css">
+
+   .preload
+   {
+    -webkit-transition:none;
+    -moz-transition:none;
+    -ms-transition:none;
+    -o-transition:none;
+   }
+     
+   #meee
+   {
+  background-color:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 1024px;
+  width:100%;
+  height: auto;
+
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 100000000000000;
+}
+  
+  #deee
+  {
+    text-align: center;
+  }  
+
+  #heading
+  {
+    color:black;
+    
+    font-size: 400%;
+    font-family: helvetica;
+    vertical-align: center;
+    position: relative;
+    top: 300px;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-delay: 0s;
+
+  }
+
+  @keyframes bounce
+  {
+    0%,20%,50%,80%,100%
+    {
+      transform: translate(0);
+      -webkit-transform:translate(0);
+    }
+
+    40%
+    {
+        transform: translate(-30px);
+      -webkit-transform:translate(-30px);
+    }
+    60%
+    {
+        transform: translate(-15px);
+      -webkit-transform:translate(-15px);
+    }
+  }
+
+   body
+   {
+     background-color: white;
+     background:linear-gradient(#ffffff,#777777;)     
+   }
+
+   p
+   {
+
+    font-size: 120%; font-color:grey;
+   }
+   
+
+   .par:hover
+   {
+
+    font-size: 150%;
+    color: green;
+   }
+
+   .paro:hover
+   {
+ font-size: 350%;
+    color: green;
+
+   }
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+}
+
+#ci1:hover .overlay {
+  opacity: .75;
+
+}
+
+#section6:hover
+{
+
+  font-size: 150%;
+  color: white;
+}
+
+
+
+.coll
+{
+font-size: 300%;
+ text-align: left; 
+ margin-top: 50px;
+margin-bottom: 50px; 
+color: #D9611D;
+ font-style: italic;
+
+}
+ #education{
+    font-size: 250%;
+   }
+
+   #shape {
+                
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: none;
+                position: relative;
+                
+            }
+            
+            .bold {
+                
+                font-weight: bold;
+                
+            }
+        
+.list-inline-item .fa-facebook:hover
+   {
+    font-size: 150%;
+   }
+
+@media (min-width: 576px) { 
+   #jumbo1
+   {
+    background-image: url("bg1.jpg");
+    width: auto;
+    
+    height: 770px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;    
+    
+
+   }
+   .ftt
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    transition: ease-in;
+   }
+   #jh1
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    transition: ease-in;
+
+   }
+    #jh2
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    transition: ease-in;
+
+   }
+
+   
+
+    @keyframes dee {
+
+      0%
+      {
+        translate: (0,-1000px);
+        -webkit-transform: translate(0,-1000px);
+        display: none;
+      }
+      100%
+      {
+        translate: (0,0px);
+        -webkit-transform: translate(0,0px);
+      }
+
+    }
+
+  
+
+ }
+
+   @media screen and (max-width: 576px) {
+
+    iframe
+    {
+      height:2850px;
+    }
+
+    #jumbo1
+   {
+    
+    background-image: url("bg.jpeg");
+    width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: dee1;
+    animation-duration: 2s;
+    transition: ease-in;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+
+
+   }
+
+  #school{
+    font-size: 200%; 
+     }
+   
+   #education
+   {
+    font-size: 250%;
+   }
+   .paro
+   {
+    font-size: 150%;
+   }
+
+
+   .ftt
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 9s;
+    transition: ease-in;
+    animation-fill-mode: forwards;
+   }
+   #jh1
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 9s;
+    transition: ease-in;
+    animation-fill-mode: forwards;
+
+
+   }
+    #jh2
+   {
+    animation-name: dee;
+    animation-delay: 1s;
+    animation-duration: 9s;
+    transition: ease-in;
+    animation-fill-mode: forwards;
+
+   }
+
+   #heading
+  {
+     color:black;
+    
+    font-size: 300%;
+    font-family: helvetica;
+    vertical-align: center;
+    position: relative;
+    top: 250px;
+    left: -330px;
+
+  }  
+
+    @keyframes dee {
+
+      0%
+      {
+        translate: (0,-1000px);
+        -webkit-transform: translate(0,-1000px);
+        color: black;
+      }
+       25%
+      {
+        translate: (0,0px);
+        -webkit-transform: translate(0,0px);
+        color: black;
+        opacity: 1;
+      }
+       50%
+      {
+        translate: (0,0px);
+        -webkit-transform: translate(0,0px);
+        color: black;
+         opacity: 1;
+
+      }
+       95%
+      {
+        translate: (0,0px);
+        -webkit-transform: translate(0,0px);
+        color: black;
+         opacity: 1;
+      }
+      100%
+      {
+        opacity: 0;
+        }
+
+
+    }
+
+     @keyframes dee1 {
+
+      0%
+      {
+        background-image: url("bg.jpeg");
+        width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+      }
+      25%
+      {
+
+      
+      background-image: url("bg2.jpg");
+        width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+      }
+      50%
+      {
+        background-image: url("bg2.jpg");
+        width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+      75%
+      {
+        background-image: url("bg2.jpg");
+        width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+      100%
+      {
+        background-image: url("bg2.jpg");
+        width: auto;
+    background-position: right;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+
+
+    }
+
+
+   }
+
+   </style>
+      
+  </head>
+    
+  <body class="preloader" onload="gayab()">
+
+    <!-- Navigation bar -->
+
+      
+   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%; position: fixed; background-color: #706351; z-index: 1000000;" class="col-sm" >
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://deetryingweb-com.stackstaging.com/about.html" >About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Education">Education</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="http://deetryingweb-com.stackstaging.com/skills.html">Skills</a>
+      </li>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="http://deetryingweb-com.stackstaging.com/timeline.html">Timeline</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Navigation bar  end -->
+
+<!--jumbotron starts(wanna knoe dee)-->
+
+
+   <div class="media-body"> 
+<div class="jumbotron div-fluid " id="jumbo1">
+  <h1 class="display-4 " style="position: absolute;top: 150px; font-size: 450%; color: white; " id="jh1" class="ftt">Hello, world!</h1>
+  <p class="lead " style="position: absolute;top: 350px; font-size: 250%; color: white;" id="jh2"><b>Wanna know who DEE is ??</b></p>
+  <hr class="my-4">
+  <p style="position: absolute; text-align: center;top: 550px;  font-size: 200%; color: white; " class="ftt" >Let's get started.</p>
+  <a href="#jumbo2" class="btn btn-primary btn-lg"  role="button" style="position: absolute; text-align: center;top: 625px; " id="jumbo"> Let's Go</a>
+</div>
+</div>
+</div>
+<div class="container" id="jumbo2"></div>
+
+<div class="jumbotron jumbotron-fluid" style="margin-top: 150px;">
+  <div class="container">
+    <h1 class="display-4 col-sm" style="color: #697578;"><b>YOU KNOW ME</b> </h1>
+    
+  </div>
+</div>
+
+<!-- Jumbotron ends-->
+
+<!-- home content starts-->
+
+    <div class="container div-fluid" id="Home" >
+      <h1 class="col-sm" style="text-align: center; margin-top: 200px; margin-bottom: 80px; color: black; font-size: 350%;" >HOME</h1>
+      
+      <div class="row">
+    <div class="col-sm" >
+     <H1 style="color: black; font-style: italic;" > Education</H1>
+      <p style="margin-top: 25px; margin-bottom: 25px; color: #C3083F; font-style: italic;" class="par"> I did my schooling form Delhi public school ghaziabad. Right now i am pursuing my Computer Science engineering at JSSATEN. Delhi Public school is one of the most prestigious schools of our country. With an avg of 90% of result in 12th class and a huge no of iitians produced every year indeed no other school can match what DPSG provides . Talking about JSSATEN it is one of the best college in Uttar Pradesh . It provides students various types of courses .</p>
+
+    </div>
+    <div class="col-sm">
+      <h1 style="color: black; font-style: italic;">Activities</h1>
+     <p style="margin-top: 25px; margin-bottom: 25px;color: #1395BA; font-style: italic;" class="par"> This section will contain all the extras i have done apart from academics.Most of the activites are related to attending all sorts of functions, music events and camping. I have provided you everything i have done in last two year of my college life .Basically a glimpse of fun life of college.</p>
+    </div>
+    <div class="col-sm">
+      <h1 style="color: black;font-style: italic;">Skills</h1>
+     <p style="margin-top: 25px;margin-bottom: 25px;color: #C3083F;font-style: italic;" class="par"> Since this is my portfolio site Skills section is the most important one . From school to college i have acquired numerous amount of skills . That includes techinical as wel as personality development skills.Talking about technical skills i know C, Python and Java language .I know about web development which includes HTML, CSS ,JAVASCRIPT , JQUERY , PYTHON , MYSQL , BOOTSTRAP, PHP, WORDPRESS ,CCS3 , HTML5 and many more.</p>
+    </div>
+  </div>
+</div>
+
+<!-- home content ends -->
+
+<!-- education content starts -->
+
+<div class="container" style="margin-top: 200px;" id="ci1">
+
+    <h1 class="col-sm" style="text-align: center; font-size: 350%;color: #107895; margin-bottom: 75px;"  id="Education"><b>Education</b></h1>
+
+    <a href="https://www.dpsghaziabad.com/" class="coll" target="_blank " style="position: relative;top:-30px;" id="school"><b>Schooling</b></a>  
+
+    <div class="row">
+    <div class="col-sm">
+      <div class="card" id="free1">
+  <img class="card-img-top" src="me2.jpg" alt="Card image cap" >
+  <div class="overlay" >
+    <div class="text" style="font-size: 300%;color: white;text-align: center; ">Delhi Public School Ghaziabad.</div>
+
+  </div>
+  
+</div>
+    </div>
+    
+  </div>
+</div>
+  
+
+
+    <div class="container" style="margin-top:150px; width:100%;height: auto;"  id="college">
+
+      <a href="http://www.jssaten.ac.in/" class="coll" target="_blank" style=" position: relative; top: -50px;" id="school"><b>College</b></a>
+
+      <div id="carouselExample" class="carousel slide carousel-fade col-sm" data-ride="carousel" id="caro" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExample" data-slide-to="1"></li>
+    <li data-target="#carouselExample" data-slide-to="2"></li>
+       <li data-target="#carouselExample" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="cc2.jpg" alt="First slide" >
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="cc3.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="cc1.jpg" alt="Third slide">
+    </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" src="cc.jpg" alt="Third slide">
+   
+    </div>
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    </div>
+
+
+<!-- Education content ends-->
+
+
+
+<!-- Skills jumbotron -->
+
+<div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(#48c6ef,#6f86d6); " id="skills">
+  <div class="container">
+    <p style="font-size:300%; color:black; text-align: center; text-shadow: 4px 4px 2px grey;"><B>Show Time</B></p>
+   <a href="#" class="btn btn-primary btn-lg"  role="button" > Let's Go</a>
+
+    
+  </div>
+
+</div>
+
+   <div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(to right,#0099f7,#f11712); height: auto; " id="skills">
+  <div class="container">
+    <p style="font-size:300%; color:black; text-align: center;" class="paro" ><B>HTML AND CSS</B></p>
+
+    <video controls style="max-height: 800px; max-width:100%; height: auto; width:auto; border: solid; margin-top: 50px; border-radius: 5px;">
+    <source src="video.mp4" type="video/mp4">
+   </video>
+
+   <p style="font-size: 125%; margin:30px; width: 100%; position: relative;left: -30px; "><b>By using css you can create everything you can think of. This video shows the copy of facebook page i made.</b><a href="http://deetryingweb-com.stackstaging.com/facebook%20login/facebook.html" style="font-size: 150%; color: black; font-style :italic;" target="_blank"><b>Wanna See the page ? Let's Go!!</b></a>
+</p>
+
+  <p><b>One more basic webpage using html and css</b><a href="http://deetryingweb-com.stackstaging.com/dc.html" target="_blank" style="font-size: 125%; color: black; font-style: italic;"><B> Dissapearing Circles</B></a></p>
+  
+  </div>
+
+</div>
+
+<!-- skill javascript-->
+<div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(to left,#3a1c71,#d76d77,#ffaf7b); height: 800px; width: 100%; " id="skills">
+  <div class="container">
+     <p style="font-size:300%; color:white; text-align: center;" class="paro" ><B>JAVASCRIPT</B></p>
+     <h1>Test Your Reactions!</h1>
+        
+        <p>Click on the boxes and circles as quickly as you can!</p>
+        
+        <p class="bold">Your time: <span id="timeTaken"></span></p>
+        
+        <div id="shape"></div>
+       
+
+  </div>
+</div>
+ <!-- Skill javascript end-->
+
+
+  
+
+<!-- Skills jumbotron end-->
+<iframe src="timeline/timeline.html" name="timeline" allowTransparency
+"true" scrolling="no"  frameborder="0" width="100%" height="3300"></iframe>
+
+ <!--contact form--> 
+<div class="container col-sm div-fluid" >
+      
+    <h1 style="margin-top: 100px; " class="paro">Get in touch! or Have Suggestions?</h1>
+      
+      <div id="error"><? echo $error.$successMessage; ?></div>
+      
+      <form method="post">
+  <fieldset class="form-group">
+    <label for="email" style="margin-top: 30px;" >Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="subject" style="margin-top: 30px;" >Subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" >
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleTextarea" style="margin-top: 30px;" >What would you like to ask us?</label>
+    <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+  </fieldset>
+  <button type="submit" id="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+</form>
+          
+        </div>
+<!--cirle to go up-->
+
+
+<!-- contact form ends-->
+ <!-- footer starts-->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4" style="background:linear-gradient(to top,#000428,#004e92); margin-top: 100px; height: 150px;">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/profile.php?id=100007413937612" class="btn-floating btn-fb mx-3" target="_blank">
+            <i class="fa fa-facebook" style="font-size:20px;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item" >
+          <a class="btn-floating btn-tw mx-1" href="https://twitter.com/DeepakS23041" target="_blank">
+            <i class="fa fa-twitter" style="font-size:20px;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1" href="https://plus.google.com/103235023700656948421" target="_blank">
+            <i class="fa fa-google-plus" style="font-size:20px;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1" href="https://www.instagram.com/deepaksingh_1998/" target="_blank">
+            <i class="fa fa-instagram" style="font-size:20px;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1" href="https://www.quora.com/profile/Deepak-Singh-1066" target="_blank">
+            <i class="fa fa-quora" style="font-size:20px;"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color:white">© 2018 Copyright:
+      <a href="http://deetryingweb-com.stackstaging.com/" target="_blank">deetryingweb.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <div id="meee" >
+    <div id="deee">
+      <h1 id="heading">Welcome</h1>
+    </div>
+    </div>
+
+
+    <!-- footer ends-->  
+
+  
+
+       <!-- footer starts-->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+     <script type="text/javascript">
+
+       $(window).load(function()
+      {
+        $("body").removeClass("preload");
+      });
+
+
+     
+     function gayab()
+      { 
+        
+        document.getElementById("meee").style.display="None";
+      }  
+
+
+
+
+
+        
+
+        $("form").submit(function(e) {
+              
+              var error = "";
+              
+              if ($("#email").val() == "") {
+                  
+                  error += "The email field is required.<br>"
+                  
+              }
+              
+              if ($("#subject").val() == "") {
+                  
+                  error += "The subject field is required.<br>"
+                  
+              }
+              
+              if ($("#content").val() == "") {
+                  
+                  error += "The content field is required.<br>"
+                  
+              }
+              
+              if (error != "") {
+                  
+                 $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+                  
+                  return false;
+                  
+              } else {
+                  
+                  return true;
+                  
+              }
+          });
+
+
+
+               var start = new Date().getTime();
+            
+            function getRandomColor() {
+                
+                var letters = '0123456789ABCDEF'.split('');
+    
+                var color = '#';
+    
+                for (var i = 0; i < 6; i++ ) {
+        
+                    color += letters[Math.floor(Math.random() * 16)];
+    
+                }
+    
+                return color;
+
+            }
+            
+            function makeShapeAppear() {
+                
+                var top = Math.random() * 250;
+                
+                var left = Math.random() *200;
+                
+                var width = (Math.random() * 100) + 100;
+                
+                if (Math.random() > 0.5) {
+                    
+                    document.getElementById("shape").style.borderRadius = "50%";
+                    
+                } else {
+                    
+                    document.getElementById("shape").style.borderRadius = "0";
+                    
+                }
+                
+                document.getElementById("shape").style.backgroundColor = getRandomColor();
+                
+                document.getElementById("shape").style.width = width + "px";
+                
+                document.getElementById("shape").style.height = width + "px";
+                
+                document.getElementById("shape").style.top = top + "px";
+                
+                document.getElementById("shape").style.left = left + "px";
+    
+                document.getElementById("shape").style.display = "block";
+                
+                start = new Date().getTime();
+
+            }
+            
+            function appearAfterDelay() {
+                
+                setTimeout(makeShapeAppear, Math.random() * 2000);
+                
+            }
+            
+            appearAfterDelay();
+            
+            document.getElementById("shape").onclick = function() {
+                
+                document.getElementById("shape").style.display = "none";
+                
+                var end = new Date().getTime();
+                
+                var timeTaken = (end - start) / 1000;
+                
+                document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+                
+                appearAfterDelay();
+                
+            }
+       
+            
+
+    
+     
+
+      
+
+    </script>
+ 
+ 
+ <!-- script ends-->
+
+
+      
+  </body>
+    
+</html>

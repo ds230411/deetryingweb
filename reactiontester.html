@@ -1,0 +1,130 @@
+<html>
+<head>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(to left,#3a1c71,#d76d77,#ffaf7b); height: 800px; width: 100%; " id="skills">
+  <div class="container">
+     <p style="font-size:300%; color:white; text-align: center;" class="paro" ><B>JAVASCRIPT</B></p>
+     <h1>Test Your Reactions!</h1>
+        
+        <p>Click on the boxes and circles as quickly as you can!</p>
+        
+        <p class="bold">Your time: <span id="timeTaken"></span></p>
+        
+        <div id="shape"></div>
+       
+
+  </div>
+</div>
+ <!-- Skill javascript end-->
+ <div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(to right,#0099f7,#f11712); height: auto; " id="skills">
+  <div class="container">
+    <p style="font-size:300%; color:black; text-align: center;" class="paro" ><B>HTML AND CSS</B></p>
+
+    <video controls style="max-height: 800px; max-width:100%; height: auto; width:auto; border: solid; margin-top: 50px; border-radius: 5px;">
+    <source src="video.mp4" type="video/mp4">
+   </video>
+
+   <p style="font-size: 125%; margin:30px; width: 100%; position: relative;left: -30px; "><b>By using css you can create everything you can think of. This video shows the copy of facebook page i made.</b><a href="http://deetryingweb-com.stackstaging.com/facebook%20login/facebook.html" style="font-size: 150%; color: black; font-style :italic;" target="_blank"><b>Wanna See the page ? Let's Go!!</b></a>
+</p>
+
+  <p><b>One more basic webpage using html and css</b><a href="http://deetryingweb-com.stackstaging.com/dc.html" target="_blank" style="font-size: 125%; color: black; font-style: italic;"><B> Dissapearing Circles</B></a></p>
+  
+  </div>
+
+</div>
+
+
+<div class="jumbotron div-fluid " style="margin:100px 0px 100px 0px; padding-bottom: :30px; background: linear-gradient(to left,#ff5f6d,#ffc371); height: 800px; width: 100%; " id="skills">
+  <div class="container">
+
+
+
+
+  </div>
+</div>
+
+<script type="text/javascript">
+	var start = new Date().getTime();
+            
+            function getRandomColor() {
+                
+                var letters = '0123456789ABCDEF'.split('');
+    
+                var color = '#';
+    
+                for (var i = 0; i < 6; i++ ) {
+        
+                    color += letters[Math.floor(Math.random() * 16)];
+    
+                }
+    
+                return color;
+
+            }
+            
+            function makeShapeAppear() {
+                
+                var top = Math.random() * 250;
+                
+                var left = Math.random() *200;
+                
+                var width = (Math.random() * 100) + 100;
+                
+                if (Math.random() > 0.5) {
+                    
+                    document.getElementById("shape").style.borderRadius = "50%";
+                    
+                } else {
+                    
+                    document.getElementById("shape").style.borderRadius = "0";
+                    
+                }
+                
+                document.getElementById("shape").style.backgroundColor = getRandomColor();
+                
+                document.getElementById("shape").style.width = width + "px";
+                
+                document.getElementById("shape").style.height = width + "px";
+                
+                document.getElementById("shape").style.top = top + "px";
+                
+                document.getElementById("shape").style.left = left + "px";
+    
+                document.getElementById("shape").style.display = "block";
+                
+                start = new Date().getTime();
+
+            }
+            
+            function appearAfterDelay() {
+                
+                setTimeout(makeShapeAppear, Math.random() * 2000);
+                
+            }
+            
+            appearAfterDelay();
+            
+            document.getElementById("shape").onclick = function() {
+                
+                document.getElementById("shape").style.display = "none";
+                
+                var end = new Date().getTime();
+                
+                var timeTaken = (end - start) / 1000;
+                
+                document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+                
+                appearAfterDelay();
+                
+            }
+       
+         
+
+
+</script>
+</body>
+</html>

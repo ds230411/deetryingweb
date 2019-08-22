@@ -1,0 +1,75 @@
+<html>
+<head>
+	<style type="text/css">
+	.circle
+	{
+		height: 250px;
+		width: 250px;
+		border-radius: 50%
+
+    }	
+    #one
+    {
+    	background-color: red;
+    	float: left;
+    	margin:10px;
+    	    }
+    #two{
+    	background-color: blue;
+    	float: left;
+    	margin:10px;
+    }
+    #three
+    {
+    	background-color: green;
+    	float: left;
+    	margin:10px;
+    }
+    h1
+    {
+     font-size: 200%
+     color:black;
+     font-family: arial;
+
+    }
+
+    p
+    {
+     font-size: 200%;
+     font-family: fantasy;
+
+
+    }
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1>We will be dissapearing circles </h1>
+	<p>click any one of em</p>
+
+     
+<div id="one" class="circle"></div>
+<div id="two" class="circle"></div>
+<div id="three" class="circle"></div>
+<script type="text/javascript">
+	
+document.getElementById('one').onclick=function()
+{
+	document.getElementById("one").style.display ="none";
+}
+document.getElementById('two').onclick=function()
+{
+	document.getElementById("two").style.display ="none";
+}
+document.getElementById('three').onclick=function()
+{
+	document.getElementById("three").style.display ="none";
+}
+</script>>
+
+</body>
+</html>
